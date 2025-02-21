@@ -11,6 +11,9 @@ def home():
 @app.route('/hello')
 def hello():
     return jsonify({"message": "Hello!", "status": "ok"})
+@app.route('/foo',methods=['GET'])
+def foo():
+    return jsonify({'message':'Fooziman'};
 
 @app.route('/gm')
 def gm():
